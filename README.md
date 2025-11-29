@@ -202,10 +202,3 @@ FIELD, Andy. Discovering statistics using IBM SPSS statistics. 5. ed. London: Sa
 - Automação via pipeline (Prefect / Airflow)
 
 ---
-
-## 🤝 Contribuições
-
-Sugestões e melhorias são bem-vindas!  
-Se quiser que eu gere os scripts prontos do diretório `/scripts/`, me avise.
-
----
