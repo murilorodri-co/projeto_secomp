@@ -1,0 +1,416 @@
+Delivered-To: murilo.corporativo28@gmail.com
+Received: by 2002:a05:6021:8517:b0:67d:3c71:ff66 with SMTP id aj23csp2448312wdc;
+        Fri, 10 Oct 2025 09:48:09 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFPh6nZRvgOqRCvwdfyxKZYy2RgSEeKUbIS98C3v4z+5zi/q5nEBn0aH+mKxEXDb6me3fmP
+X-Received: by 2002:a05:620a:890d:b0:883:7d96:9033 with SMTP id af79cd13be357-8837d969150mr1465817285a.29.1760114888881;
+        Fri, 10 Oct 2025 09:48:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1760114888; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ZKyjk1drpaIzbfnIdanXmYL+vEqL78sb7J7qwYseoALW3TSEZD4mvQNuucY1k2Pxkk
+         GLHXZU99UAsu8tU6DA89ywL5ZvD5xqmcwDlJi8fnC+0veusDCYpJZtinPMFoedlcOmjd
+         OXgKak9zcg3BI72gn/ZVQjByevuDumphiWQ/EppbYuTr4jwdaolDZKPABW7SHcG2S7bv
+         bILLawRZ2VdVzRcQPntFieovutS2nXKvf0fxL/uaX7M7tbXeQOVm6QExjo6E+5A92jIm
+         KoyFWutrqDkd7CtUGFUtsB1w+M8kOUWkPbIBUD/SrDbv/r/6Rxjax51k7FwcabPLt9hc
+         zUjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe-post:list-unsubscribe:date:message-id
+         :mime-version:subject:to:reply-to:from:dkim-signature:dkim-signature;
+        bh=VFOr/h9YoaP14rbW/SRqUlmPwJO3NLV+Why9Rkywevc=;
+        fh=k3R2ZY8KdfylOgghjiNJV3nXAhWQYHjj0h7vu1VpoVY=;
+        b=BzsW/7SGaVz/5XZCYVEpKfskiMbAUFQFwZ2na/OKERRod8ThQIr28emVa3rn6x7E7f
+         A08QVOFAOmhQ3FKfJ8QshhpsfaCdjDxr98w+ssGpkXxNSuRHokzekQjXRvB9eNPgekkE
+         KG3v5ORKdhEl9l6+WXKSoLiXHvWNEhD+E98/do0t++vWQaRvoANcuKGArpu/oI1X6kV0
+         uQmKID8VmbtZwN987J42UDgEWtDqNhdKw16kAOBZ6nGTOjI4diwhT0NKljTMr/Dflpdl
+         beG2KuEF+XpODSgEoHnkjZwoOUYWGeYNPTv4MBjHT9lvYOAlD1T3j+pIQcyMtTMNwQ7Z
+         LCNA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@event.even3.com header.s=zgzzihx2nposbrsp5fc254k4klvixcxe header.b=aYZaV0g7;
+       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=eXrdn7Uy;
+       spf=pass (google.com: domain of 01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@mail.event.even3.com designates 54.240.34.120 as permitted sender) smtp.mailfrom=01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@mail.event.even3.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=event.even3.com
+Return-Path: <01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@mail.event.even3.com>
+Received: from a34-120.smtp-out.amazonses.com (a34-120.smtp-out.amazonses.com. [54.240.34.120])
+        by mx.google.com with ESMTPS id af79cd13be357-885f16a07fbsi126665885a.460.2025.10.10.09.48.08
+        for <murilo.corporativo28@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 10 Oct 2025 09:48:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@mail.event.even3.com designates 54.240.34.120 as permitted sender) client-ip=54.240.34.120;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@event.even3.com header.s=zgzzihx2nposbrsp5fc254k4klvixcxe header.b=aYZaV0g7;
+       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=eXrdn7Uy;
+       spf=pass (google.com: domain of 01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@mail.event.even3.com designates 54.240.34.120 as permitted sender) smtp.mailfrom=01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@mail.event.even3.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=event.even3.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=zgzzihx2nposbrsp5fc254k4klvixcxe; d=event.even3.com;
+	t=1760114888;
+	h=From:Reply-To:To:Subject:MIME-Version:Content-Type:Message-ID:Date:List-Unsubscribe:List-Unsubscribe-Post;
+	bh=fn6gD0Lv5ZuSVG4D6KvRl/gYZ/TiVRwKHpEpWDUf6Wo=;
+	b=aYZaV0g7QUtKGWL6Vb2qqUpflA53XD3P/KZMDGF6HQmOYq+oOeO1V8g9L5jd9fay
+	Hw/vRvAlPUYbPuF8zfB1E2Ji5EQ1mMiFjzYUrgdDGlYX1CPaKpAmrEiT0Xg2UJgS8sv
+	p+LqFwCzmODnC60woFH4q+LoCetaxc1KoAviCJ/Y=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1760114888;
+	h=From:Reply-To:To:Subject:MIME-Version:Content-Type:Message-ID:Date:List-Unsubscribe:List-Unsubscribe-Post:Feedback-ID;
+	bh=fn6gD0Lv5ZuSVG4D6KvRl/gYZ/TiVRwKHpEpWDUf6Wo=;
+	b=eXrdn7UypfFszWHYD4TESQTI0sW57sE+28VQc59dzHmp3enIFx1NpTveCdq9q/KQ
+	oou+JK0S0Gcp8IkatPQsc8sR7qFXMGd4kFA8xCtJJH4wi9PZ00lv74gPq1AEEmMVvow
+	0zJLS05NXtUWpFDb5w/Q3yh9WWJb/HGL+jbex+gw=
+From: =?utf-8?B?U0VDT01QIDIwMjUgdmlhIEV2ZW4z?= <hello@event.even3.com>
+Reply-To: sergio.almeida@ifg.edu.br
+To: murilo.corporativo28@gmail.com
+Subject: =?UTF-8?Q?[secomp-2025-632372]_Comprovante_de_Submiss=C3=A3o?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_184176_763619320.1760114888467"
+Message-ID: <01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@email.amazonses.com>
+Date: Fri, 10 Oct 2025 16:48:08 +0000
+List-Unsubscribe: <mailto:unsubscribe-01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000@amazonses.com?subject=https://o.us-east-1.user-subscription.com/oc/38adeb23-51ca-4f3f-bf6d-bd422b9e2273/163cac52-a35b-4e12-850e-8bc6ef7c0645/01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000%3Ft%3Dc2814329-9e56-4391-acaa-5515932b0318>, <https://o.us-east-1.user-subscription.com/oc/38adeb23-51ca-4f3f-bf6d-bd422b9e2273/163cac52-a35b-4e12-850e-8bc6ef7c0645/01000199cf05cf13-4432e6ef-3d06-4517-ba82-fbbfdf85e006-000000?t=c2814329-9e56-4391-acaa-5515932b0318>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: ::1.us-east-1.iq8q6Yxm9zRkpanCDD/b4WzJo+zWxoCkvZNX9XrlpCg=:AmazonSES
+X-SES-Outgoing: 2025.10.10-54.240.34.120
+
+------=_Part_184176_763619320.1760114888467
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+ =20
+
+   =20
+
+   =20
+
+   =20
+
+     =20
+
+       =20
+
+         =20
+
+           =20
+
+             =20
+
+               =20
+
+                 =20
+
+                   =20
+
+                 =20
+
+                 =20
+
+                   =20
+
+                     =20
+
+                   =20
+
+                 =20
+
+               =20
+
+             =20
+
+             =20
+
+               =20
+                             =20
+
+ =20
+
+   =20
+
+     =20
+
+       =20
+ COMPROVANTE DE SUBMISS=C3=83O=20
+=20
+
+     =20
+
+     =20
+
+        O trabalho cient=C3=ADfico abaixo foi submetido com=20
+SUCESSO
+ ao evento SECOMP 2025:
+     =20
+
+
+     =20
+
+       =20
+
+         =20
+
+           =20
+T=C3=ADtulo:=20
+ FINAIS DE SEMANA E SEGURAN=C3=87A VI=C3=81RIA: AN=C3=81LISE DE ACIDENTES R=
+ELACIONADOS A =C3=81LCOOL E FADIGA
+         =20
+
+         =20
+
+           =20
+N=C3=BAmero:
+ 1360755
+         =20
+
+         =20
+
+           =20
+Data de Submiss=C3=A3o:
+ 10/10/2025
+         =20
+
+
+         =20
+
+           =20
+Modalidade:
+ Resumo Expandido
+         =20
+
+         =20
+
+           =20
+=C3=81rea Tem=C3=A1tica:
+ Transforma=C3=A7=C3=A3o Digital em setores p=C3=BAblico, privado e educaci=
+onal
+         =20
+
+         =20
+
+           =20
+Autores:
+ Murilo Rodrigues Fernandes de S=C3=A1,Marcelo Vin=C3=ADcius Jord=C3=A3o Al=
+meida
+         =20
+
+       =20
+
+     =20
+
+     =20
+
+     =20
+
+       =20
+
+        Cordialmente,
+     =20
+
+     =20
+
+      Comiss=C3=A3o Cient=C3=ADfica
+     =20
+
+      S=C3=A9rgio Henrique de Almeida
+     =20
+
+      sergio.almeida@ifg.edu.br
+
+
+     =20
+
+
+   =20
+
+ =20
+
+
+
+
+                             =20
+             =20
+
+             =20
+
+               =20
+                             =20
+
+ =20
+
+   =20
+
+     =20
+Acessar o Site
+
+     =20
+|
+
+     =20
+Entre em contato
+
+   =20
+
+ =20
+
+ =20
+
+   =20
+
+      =20
+Even3
+=20
+
+   =20
+
+ =20
+
+
+
+                             =20
+             =20
+
+           =20
+
+         =20
+
+       =20
+
+     =20
+
+   =20
+
+ =20
+
+
+
+------=_Part_184176_763619320.1760114888467
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+                              <html charset=3D"UTF-8">
+<body>
+  <div alink=3D"#63A42C" bgcolor=3D"#f6f6f6" link=3D"#63A42C" style=3D"text=
+-align: left; margin: 0px; background: #f2f2f2; border: 1px solid #ddd" vli=
+nk=3D"#63A42C">
+    <div class=3D"adM">
+    </div>
+    <table border=3D"0" cellpadding=3D"25" cellspacing=3D"0" width=3D"100%"=
+>
+      <tbody>
+        <tr>
+          <td>
+            <center>
+              <table cellpadding=3D"15" cellspacing=3D"0" height=3D"100" st=
+yle=3D"border-top:1px solid #ddd;border-left:1px solid #ddd;border-right:1p=
+x solid #ddd;border-bottom:1px solid #eee;background:#ffffff;border-top-lef=
+t-radius:6px;border-top-right-radius:6px" width=3D"620">
+                <tbody>
+                  <tr>
+                    <td style=3D"min-height:10px;padding:0px"></td>
+                  </tr>
+                  <tr>
+                    <td style=3D"text-align:center;padding:15px">
+                      <img alt=3D"SECOMP 2025" src=3D"https://images.even3.=
+com/GtFN8kcv-qlSeIVNukChAO_QSA8=3D/fit-in/250x250/smart/https://static.even=
+3.com/logos/botton4x.23bf95deec064155bb98.png" style=3D"max-width:250px;max=
+-height:250px">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table cellpadding=3D"25" cellspacing=3D"0" height=3D"100" st=
+yle=3D"border:0;background:#fcfcfc;font:14px/22px helvetica;border-bottom:1=
+px solid #ddd;border-left:1px solid #ddd;border-right:1px solid #ddd;border=
+-bottom-left-radius:6px;border-bottom-right-radius:6px" width=3D"620">
+               =20
+                              <tbody>
+  <tr>
+    <td>
+      <p style=3D"text-align:center;margin-bottom:30px;">
+        <b><u> COMPROVANTE DE SUBMISS=C3=83O </u> </b>
+      </p>
+      <p>
+        O trabalho cient=C3=ADfico abaixo foi submetido com <span style=3D"=
+color:Green"><b><u>SUCESSO</u></b></span> ao evento SECOMP 2025:
+      </p>
+
+      <div style=3D"padding:10px;">
+        <ul>
+          <li>
+            <b>T=C3=ADtulo: </b> FINAIS DE SEMANA E SEGURAN=C3=87A VI=C3=81=
+RIA: AN=C3=81LISE DE ACIDENTES RELACIONADOS A =C3=81LCOOL E FADIGA
+          </li>
+          <li>
+            <b>N=C3=BAmero:</b> 1360755
+          </li>
+          <li>
+            <b>Data de Submiss=C3=A3o:</b> 10/10/2025
+          </li>
+
+          <li>
+            <b>Modalidade:</b> Resumo Expandido
+          </li>
+          <li>
+            <b>=C3=81rea Tem=C3=A1tica:</b> Transforma=C3=A7=C3=A3o Digital=
+ em setores p=C3=BAblico, privado e educacional
+          </li>
+          <li>
+            <b>Autores:</b> Murilo Rodrigues Fernandes de S=C3=A1,Marcelo V=
+in=C3=ADcius Jord=C3=A3o Almeida
+          </li>
+        </ul>
+      </div>
+      <br />
+      <span style=3D"color:#63a42c;font-weight:bold;padding:0px;text-decora=
+tion:none" target=3D"_blank">
+        <br>
+        Cordialmente,
+      </span>
+      <br>
+      Comiss=C3=A3o Cient=C3=ADfica
+      <br />
+      S=C3=A9rgio Henrique de Almeida
+      <br />
+      sergio.almeida@ifg.edu.br
+
+
+      <p style=3D"font-size:11px"></p>
+
+    </td>
+  </tr>
+</tbody>
+
+                             =20
+              </table>
+              <table cellpadding=3D"15" cellspacing=3D"0" height=3D"100" wi=
+dth=3D"620">
+               =20
+                              <tbody>
+  <tr>
+    <td style=3D"font:12px/18px helvetica;text-align:center;color:#aaa;padd=
+ing:20px 0px 20px 0px">
+      <a href=3D"https://www.even3.com.br/secomp-2025-632372" style=3D"colo=
+r:#aaa;text-decoration:none" target=3D"_blank">Acessar o Site</a>
+      <span style=3D"padding:0px 8px 0px 8px;color:#aaa">|</span>
+      <a href=3D"mailto:secomp.jatai@ifg.edu.br" style=3D"color:#aaa;text-d=
+ecoration:none" target=3D"_blank">Entre em contato</a>
+    </td>
+  </tr>
+  <tr>
+    <td style=3D"font:10px/16px helvetica;text-align:center;color:#aaa;padd=
+ing:20px 0px 0px 0px">
+       <p><a href=3D"https://www.even3.com.br/" target=3D"_blank">Even3</a>=
+ </p>
+    </td>
+  </tr>
+</tbody>
+                             =20
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+                             =20
+------=_Part_184176_763619320.1760114888467--
