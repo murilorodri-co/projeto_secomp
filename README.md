@@ -72,13 +72,6 @@ Inclui:
 ```python
 paleta_azul = sns.color_palette("Blues", n_colors=3)
 ```
-
-As figuras são salvas em:
-
-```
-outputs/figures/
-```
-
 ---
 
 ## 🔥 3. Teste estatístico — Qui-Quadrado
@@ -161,23 +154,7 @@ plt.show()
 
 ---
 
-## 📌 7. Como reproduzir o projeto
-
-```bash
-python scripts/prepare_data.py
-python scripts/plot_all.py
-python scripts/analyze_chi2.py
-```
-
-Ou use os notebooks:
-
-```bash
-jupyter lab notebooks/
-```
-
----
-
-## 📚 8. Referências utilizadas
+## 📚 7. Referências utilizadas
 
 ```
 CRESWELL, John W. Research design: qualitative, quantitative, and mixed methods approaches. 4. ed. Thousand Oaks: Sage, 2014.
@@ -193,7 +170,7 @@ FIELD, Andy. Discovering statistics using IBM SPSS statistics. 5. ed. London: Sa
 
 ---
 
-## 🚀 9. Próximos passos possíveis
+## 🚀 8. Próximos passos possíveis
 
 - Dashboard em tempo real (Streamlit/Dash)  
 - Modelos de machine learning  
